@@ -1,14 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import Nav from './Components/Nav/Nav'
-import Container from './Components/Container/Container';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <Container />
+      
+
+
+
+
+
+      <Footer />
     </div>
   );
 }
