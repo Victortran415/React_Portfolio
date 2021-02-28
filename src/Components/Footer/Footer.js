@@ -15,7 +15,7 @@ const styles = {
 
 const Footer = () => {
 	return (
-		<footer class="footer">
+		<footer className="footer">
 			<p id="footerTag" style={styles.footer}>
 				Created by Victor
 			</p>

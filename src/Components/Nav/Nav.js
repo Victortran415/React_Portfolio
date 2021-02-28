@@ -1,12 +1,26 @@
 import React from "react";
-import styles from './NavStyles'
+
+
+const styles = {
+	navbar: {
+		backgroundColor: "rgba(0, 0, 0, 0.384)",
+		fontSize: "30px",
+		fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
+		position: "fixed",
+		width: "100%",
+	},
+	navlink: {
+		fontSize: "20px",
+		marginRight: "15px",
+	},
+};
 
 const Nav = () => {
 	return (
         
 
 		<nav style={styles.navbar} className="fix-top navbar navbar-expand-md navbar-dark bg-dark">
-			<a style={styles.navbar} className="navbar-brand" href="./index.html">
+			<a className="navbar-brand" href="/">
 				<i className="fa f-font"></i>VT
 			</a>
 			<button
@@ -24,12 +38,17 @@ const Nav = () => {
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item active"></li>
 					<li className="nav-item">
-						<a style={styles.navlink} className="nav-link" href="/about">
+						<a style={styles.navlink} className="nav-link" href="/Home">
+							Home
+						</a>
+					</li>
+					<li className="nav-item">
+						<a style={styles.navlink} className="nav-link" href="/About">
 							About
 						</a>
 					</li>
 					<li className="nav-item">
-						<a style={styles.navlink} className="nav-link" href="/application">
+						<a style={styles.navlink} className="nav-link" href="/Application">
 							Application
 						</a>
 					</li>
