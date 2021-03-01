@@ -11,6 +11,5 @@ const Col = ({ size, children }) => {
 			{children}
 		</div>
 	);
-}
-
-export default Col
+};
+export default Col;
