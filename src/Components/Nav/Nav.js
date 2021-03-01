@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const styles = {
 	navbar: {
 		backgroundColor: "rgba(0, 0, 0, 0.384)",
@@ -17,9 +16,10 @@ const styles = {
 
 const Nav = () => {
 	return (
-        
-
-		<nav style={styles.navbar} className="fix-top navbar navbar-expand-md navbar-dark bg-dark">
+		<nav
+			style={styles.navbar}
+			className="fix-top navbar navbar-expand-md navbar-dark bg-dark"
+		>
 			<a className="navbar-brand" href="/">
 				<i className="fa f-font"></i>VT
 			</a>
@@ -43,8 +43,8 @@ const Nav = () => {
 						</a>
 					</li>
 					<li className="nav-item">
-						<a style={styles.navlink} className="nav-link" href="/About">
-							About
+						<a style={styles.navlink} className="nav-link" href="/Contact">
+							Contact
 						</a>
 					</li>
 					<li className="nav-item">
