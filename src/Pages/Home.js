@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../Components/Container/Container";
 import { Row } from "../Components/Row/Row";
 import Column from "../Components/Column/Col";
-
+import { useHistory } from "react-router-dom";
 
 const styles = {
 	title: {
@@ -19,6 +19,10 @@ const styles = {
 };
 
 const Home = () => {
+	const history = useHistory()
+	const handleClick = () => {
+		history.push('/Applications')
+	}
 	return (
 		<Container>
 			<Row>
@@ -31,6 +35,10 @@ const Home = () => {
 						<h2 style={styles.test}>Welcome to my adventure of a</h2>
 						<h2 style={styles.test}>Full-Stack Software Developer.</h2>
 					</div>
+					<div style={{paddingTop: '50px', textAlign:'center'}}>
+						<button className="btn btn-primary btn js-scroll px-4" onClick={handleClick}>View My Apps</button>
+					</div>
+					
 				</Column>
 			</Row>
 		</Container>
