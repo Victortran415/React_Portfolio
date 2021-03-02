@@ -17,7 +17,7 @@ const styles = {
 const Card = (props) => {
 	return (
 		<div className="card" style={styles.card}>
-			<img src={props.image} className="card-img-top" />
+			<img src={props.image} className="card-img-top" alt=''/>
 			<div className="card-body">
 				<h5 style={styles.color} className="card-title">
 					{props.title}

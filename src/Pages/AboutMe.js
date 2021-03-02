@@ -4,6 +4,7 @@ import { Row } from "../Components/Row/Row";
 import Column from "../Components/Column/Col";
 import myImage from "../Components/Images/myImage/myimage.png";
 import Wrapper from "../Components/Wrapper/Wrapper";
+import {useHistory} from 'react-router-dom'
 
 
 const styles = {
@@ -25,6 +26,11 @@ const styles = {
 	},
 };
 const AboutMe = () => {
+    const history = useHistory()
+	const handleClick = () => {
+		history.push('/Applications')
+	}
+
     return (
 		<Wrapper>
 			<Container>
@@ -62,12 +68,12 @@ const AboutMe = () => {
 								learning how to build applications so I've applied to a full
 								stack web development bootcamp at UC Berkeley Extension.
 								<br></br>
-								Check out my{" "}
-								<a href="/Application">
-									<highlight style={{ color: "orangered" }}>
+								
+								<p onClick={handleClick}>Check out my{" "}
+									<highlight style={{ color: "orangered", textDecoration: "underline" }}>
 										Portfolio
 									</highlight>
-								</a>
+								</p>
 							</p>
 						</Column>
 					</Row>
