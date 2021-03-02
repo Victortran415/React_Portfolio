@@ -11,9 +11,10 @@ import Card from '../Components/Cards/Cards'
 
 const Application = () => {
 	return (
+    
 		<Wrapper>
 			<Container>
-                <h1 className='text-center'>Applications</h1>
+                <h1 className='text-center' id='app'>Applications</h1>
                 <Row>
                     <Column size='md-6'>
                         <Card
@@ -81,6 +82,7 @@ const Application = () => {
                 </Row>
             </Container>
 		</Wrapper>
+        
 	);
 };
 

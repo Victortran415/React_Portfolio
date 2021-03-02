@@ -38,8 +38,13 @@ const Nav = () => {
 				<ul className="navbar-nav ml-auto">
 					<li className="nav-item active"></li>
 					<li className="nav-item">
-						<a style={styles.navlink} className="nav-link" href="/Home">
-							Home
+						<a style={styles.navlink} className="nav-link" href="/AboutMe">
+							About Me
+						</a>
+					</li>
+					<li className="nav-item">
+						<a style={styles.navlink} className="nav-link" href="/Applications">
+							Applications
 						</a>
 					</li>
 					<li className="nav-item">
@@ -47,11 +52,7 @@ const Nav = () => {
 							Contact
 						</a>
 					</li>
-					<li className="nav-item">
-						<a style={styles.navlink} className="nav-link" href="/Application">
-							Application
-						</a>
-					</li>
+					
 				</ul>
 			</div>
 		</nav>

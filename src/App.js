@@ -7,19 +7,24 @@ import Contact from "./Pages/Contact";
 import Application from "./Pages/Application";
 import Home from "./Pages/Home";
 import Wrapper from "./Components/Wrapper/Wrapper";
+import AboutMe from "./Pages/AboutMe";
 
 function App() {
 	return (
 		<div className="App">
+			
 			<BrowserRouter>
-				<Nav />
+				<Nav /> 
 				<Wrapper>
 					<Switch>
+						<Route path="/AboutMe">
+							<AboutMe />
+						</Route>
+						<Route path="/Applications">
+							<Application />
+						</Route>
 						<Route path="/Contact">
 							<Contact />
-						</Route>
-						<Route path="/Application">
-							<Application />
 						</Route>
 						<Route path="/Home">
 							<Home />
