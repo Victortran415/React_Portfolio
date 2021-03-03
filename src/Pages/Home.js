@@ -4,6 +4,7 @@ import { Row } from "../Components/Row/Row";
 import Column from "../Components/Column/Col";
 import { useHistory } from "react-router-dom";
 
+
 const styles = {
 	title: {
 		paddingTop: "150px",
@@ -42,6 +43,7 @@ const Home = () => {
 				</Column>
 			</Row>
 		</Container>
+		
 	);
 };
 
