@@ -16,5 +16,15 @@ html {
 
 .btnzz:hover {
 	opacity: 0.5;
+}
 
+.title1 {
+	--animate-duration: 1s
+} 
+.title2 {
+	--animate-duration: 2s;
+}
+
+.title3 {
+	--animate-duration: 3s
 }

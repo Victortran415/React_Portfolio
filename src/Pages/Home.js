@@ -10,7 +10,7 @@ const styles = {
 	},
 	test: {
 		textAlign: "center",
-		fontSize: "35px",
+		fontSize: "40px",
 		color: 'black',
 		fontFamily: 'Arial',
 		fontWeight: 'bold'
@@ -38,11 +38,15 @@ const Home = () => {
 			<Row>
 				<Column size="md-12">
 					<div style={styles.title}>
-						<h1 style={styles.test}>
-							Hi, I'm
-							Victor Tran.
+						<h1 style={styles.test}> <div className="title1 animate__animated animate__fadeInLeft">Hi, I'm
+							Victor Tran. A
+							</div>
+							
 						</h1>
-						<h2 style={styles.test}>a Full-Stack Software Developer from San Francisco</h2>
+						<h2 style={styles.test}> <div className="title2 animate__animated animate__fadeInLeft">Full-Stack Software Developer
+							</div> 
+							<div className="title3 animate__animated animate__fadeInLeft">from San Francisco</div>
+							</h2>
 						<h2 style={styles.test}></h2>
 					</div>
 					<div style={styles.btn}>
@@ -55,6 +59,7 @@ const Home = () => {
 					</div>
 				</Column>
 			</Row>
+			
 		</Container>
 	);
 };

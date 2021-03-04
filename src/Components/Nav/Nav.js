@@ -9,9 +9,17 @@ const styles = {
 		width: "100%",
 	},
 	navlink: {
-		fontSize: "18px",
+		fontSize: "22px",
 		marginRight: "15px",
 		color: 'black',
+		fontFamily: 'Arial',
+		fontWeight: 'bold'
+
+	},
+	navhome: {
+		fontSize: "22px",
+		marginRight: "15px",
+		color: 'white',
 		fontFamily: 'Arial',
 		fontWeight: 'bold'
 
@@ -24,7 +32,7 @@ const Nav = () => {
 			style={styles.navbar}
 			className="fix-top navbar navbar-expand-md ">
 			<a className="navbar-brand" href="/">
-				<i style={styles.navlink}className="fa f-font">VT</i>
+				<i style={styles.navhome}className="fa f-font">VT</i>
 			</a>
 			<button
 				className="navbar-toggler"

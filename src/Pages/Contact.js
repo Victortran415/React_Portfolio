@@ -9,13 +9,23 @@ const styles = {
 		color: "whitesmoke",
 		fontSize: "18px",
 		paddingLeft: "5px",
-		fontFamily: 'Arial'
+		fontFamily: "Arial",
+		paddingBottom: "12px",
+	},
+	infoLists: {
+		color: "whitesmoke",
+		fontSize: "18px",
+		paddingLeft: "25px",
+		fontFamily: "Arial",
+		paddingBottom: "12px",
+		
 	},
 	fab: {
 		fontSize: "55px",
-		paddingLeft: "10px",
-		paddingBottom: "10px",
+		paddingLeft: "12px",
+		paddingBottom: "18px",
 		color: "white",
+		
 	},
 	contactBox: {
 		marginTop: "3rem",
@@ -41,7 +51,7 @@ const Contact = () => {
 		<Container>
 			<Row>
 				<Column size="md-4">
-					<div className="card text-center" style={styles.contactBox}>
+					<div className="card text-center ml-4" style={styles.contactBox}>
 						<div className="card-body">
 							<h1 className="card-title">Contact</h1>
 							<div className="row">
@@ -99,53 +109,54 @@ const Contact = () => {
 				<Column size="md-7">
 					<div style={styles.contactBox}>
 						<div className="text-center">
-							<h2>Want to get in touch?</h2>
-							<p style={{ paddingRight: "100px", paddingLeft: "100px" }}>
-								Do not hesitate to reach out if you have any questions. Feel free
-								to contact me to discuss about project collab, feedbacks on
-								previous projects, or if you just want to say hello.{" "}
-							</p>
+							<h2 className="mt-2">Let's Connect!</h2>
 						</div>
-						<div className='text-center'>
-							<p>
+						<Row>
+							<Column size="md-6">
 								<i style={styles.fab} className="far fa-envelope"></i>
+								<br></br>
 								<span style={styles.infoList}> Victortran415@gmail.com</span>
-							</p>
-							<p>
+								<br></br>
+							</Column>
+							<Column size="md-6">
 								<i style={styles.fab} className="fas fa-phone-alt"></i>
-								<span style={styles.infoList}> (415)-248-6520</span>
-							</p>
-							<a
-								href={Resume}
-								download=""
-								style={styles.infoList}
-								id="updateResume"
-							>
-								<i style={styles.fab} className="fas fa-file-download"></i>{" "}
-								Resume
-							</a>
-							<br></br>
-
-							<a href="https://www.linkedin.com/in/victor-tran-927388157/">
-								<i style={styles.fab} className="fab fa-linkedin">
-									{" "}
-									<span style={styles.infoList}>
+								<br></br>
+								<span style={styles.infoLists}> (415)-248-6520</span>
+								<br></br>
+							</Column>
+						</Row>
+						<Row>
+							<Column size="md-4">
+								<a
+									href={Resume}
+									download=""
+									style={styles.infoList}
+									id="updateResume"
+								>
+									<i style={styles.fab} className="fas fa-file-download"></i>
+									<br></br>
+									<span>Resume</span>{" "}
+								</a>
+								<br></br>
+							</Column>
+							<Column size="md-4">
+								<a href="https://www.linkedin.com/in/victor-tran-927388157/">
+									<i style={styles.fab} className="fab fa-linkedin">
 										{" "}
-										LinkedIn
-									</span>
-								</i>
-							</a>
-							<br></br>
-
-							<a href="https://github.com/Victortran415" class="links">
-								<i style={styles.fab} className="fab fa-github-square">
-									<span style={styles.infoList}>
-										{" "}
-										GitHub
-									</span>
-								</i>
-							</a>
-						</div>
+									</i>
+									<br></br>
+									<span style={styles.infoList}> LinkedIn</span>
+								</a>
+								<br></br>
+							</Column>
+							<Column size="md-4">
+								<a href="https://github.com/Victortran415" class="links">
+									<i style={styles.fab} className="fab fa-github-square"></i>
+									<br></br>
+									<span style={styles.infoList}> GitHub</span>
+								</a>
+							</Column>
+						</Row>
 					</div>
 				</Column>
 			</Row>
