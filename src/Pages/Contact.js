@@ -9,7 +9,7 @@ const styles = {
 		color: "whitesmoke",
 		fontSize: "18px",
 		paddingLeft: "5px",
-		fontFamily: 'Verdana'
+		fontFamily: 'Arial'
 	},
 	fab: {
 		fontSize: "55px",
@@ -20,7 +20,7 @@ const styles = {
 	contactBox: {
 		marginTop: "3rem",
 		color: "whitesmoke",
-		fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
+		fontFamily: "Arial",
 		fontWeight: "bold",
 		fontSize: "14px",
 		border: "3px",
@@ -101,7 +101,7 @@ const Contact = () => {
 						<div className="text-center">
 							<h2>Want to get in touch?</h2>
 							<p style={{ paddingRight: "100px", paddingLeft: "100px" }}>
-								Don't hesitate to reach out if you have any questions. Feel free
+								Do not hesitate to reach out if you have any questions. Feel free
 								to contact me to discuss about project collab, feedbacks on
 								previous projects, or if you just want to say hello.{" "}
 							</p>

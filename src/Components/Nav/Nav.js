@@ -4,15 +4,17 @@ const styles = {
 	navbar: {
 		backgroundColor: "rgba(0, 0, 0, 0.384)",
 		fontSize: "30px",
-		fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
+		fontFamily: "Arial",
 		position: "fixed",
 		width: "100%",
 	},
 	navlink: {
-		fontSize: "20px",
+		fontSize: "18px",
 		marginRight: "15px",
-		color: 'white',
-		fontFamily: 'Verdana'
+		color: 'black',
+		fontFamily: 'Arial',
+		fontWeight: 'bold'
+
 	},
 };
 
@@ -36,7 +38,12 @@ const Nav = () => {
 			</button>
 			<div className="collapse navbar-collapse" id="navbarText">
 				<ul className="navbar-nav ml-auto">
-					<li className="nav-item active"></li>
+					
+					<li className="nav-item">
+						<a style={styles.navlink} className="nav-link" href="/">
+							Home
+						</a>
+					</li>
 					<li className="nav-item">
 						<a style={styles.navlink} className="nav-link" href="/AboutMe">
 							About Me

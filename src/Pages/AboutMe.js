@@ -2,15 +2,15 @@ import React from 'react'
 import { Container } from "../Components/Container/Container";
 import { Row } from "../Components/Row/Row";
 import Column from "../Components/Column/Col";
-import myImage from "../Components/Images/myImage/myimage.png";
+import myImage from "../Components/Images/myImage/6FEDD96E-9558-4269-B8D9-D47F1368113C.JPG";
 import Wrapper from "../Components/Wrapper/Wrapper";
 import {useHistory} from 'react-router-dom'
 
 
 const styles = {
 	img: {
-		width: "300px",
-		height: "300px",
+		width: 325,
+		borderRadius: '200px'
 	},
 	aboutMe: {
 		color: "whitesmoke",
@@ -34,15 +34,16 @@ const AboutMe = () => {
     return (
 		<Wrapper>
 			<Container>
+				<h1 className="text-center mb-5" style={{fontFamily: 'Arial', color: 'black', fontWeight: 'bold'}}>About Me</h1>
 				<Row>
-					<Column size="md-6">
+					<Column size="md-5">
 						<div>
-							<h1>About Me:</h1>
+							
 							<img style={styles.img} src={myImage} alt="in Japan" />
 						</div>
 					</Column>
-					<Row>
-						<Column size="md-8">
+					
+						<Column size="md-7">
 							<p style={styles.aboutMe}>
 								Hi, my name is Victor Tran. I am born and raised in San
 								Francisco, CA. If you are curious about my ethnicity, I am
@@ -76,7 +77,7 @@ const AboutMe = () => {
 								</p>
 							</p>
 						</Column>
-					</Row>
+					
 				</Row>
 			</Container>
 		</Wrapper>

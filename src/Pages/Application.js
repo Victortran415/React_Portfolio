@@ -14,7 +14,7 @@ const Application = () => {
     
 		<Wrapper>
 			<Container>
-                <h1 className='text-center' id='app'>Applications</h1>
+                <h1 className='text-center' style={{fontFamily: 'Arial', color: 'black', fontWeight: 'bold'}}>Applications</h1>
                 <Row>
                     <Column size='md-6'>
                         <Card
