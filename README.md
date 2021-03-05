@@ -1,7 +1,7 @@
 # React Portfolio
 Revised my portfolio by using ReactJS. In this portfolio, you will be able to find some information about me, you can take a look at applications that I've created, and different ways to reaching out to me whenever you want. 
 
-Here's my deployed [link](https://victortran415.github.io/React_Portfolio/)
+Here's my deployed [link](https://my-reactbased-portfolio.herokuapp.com/#/)
 
 ## Time of Contents
   - [Installation](#installation)
