@@ -17,21 +17,11 @@ function App() {
 				<Nav /> 
 				<Wrapper>
 					<Switch>
-						<Route path="/AboutMe">
-							<AboutMe />
-						</Route>
-						<Route path="/Applications">
-							<Application />
-						</Route>
-						<Route path="/Contact">
-							<Contact />
-						</Route>
-						<Route path="/Home">
-							<Home />
-						</Route>
-						<Route path="/">
-							<Home />
-						</Route>
+						<Route path="/AboutMe" component={AboutMe} />
+						<Route path="/Applications" component={Application} />
+						<Route path="/Contact" component={Contact} />
+						<Route path="/Home" component={Home} />
+						<Route exact path="/" component={Home}/>
 					</Switch>
 				</Wrapper>
 				<Footer />
