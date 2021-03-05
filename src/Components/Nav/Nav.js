@@ -22,7 +22,6 @@ const styles = {
 		color: 'white',
 		fontFamily: 'Arial',
 		fontWeight: 'bold'
-
 	},
 };
 
