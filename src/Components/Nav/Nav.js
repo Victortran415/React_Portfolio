@@ -26,7 +26,7 @@ const styles = {
 
 const Nav = () => {
 	return (
-		<nav style={styles.navbar} className="fix-top navbar navbar-expand-md ">
+		<nav style={styles.navbar} className="fixed-top navbar navbar-expand-md ">
 			<a className="navbar-brand" href="/">
 				<i style={styles.navhome} className="fa f-font">
 					VT
